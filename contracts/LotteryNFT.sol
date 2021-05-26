@@ -5,12 +5,12 @@ pragma experimental ABIEncoderV2;
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
-import "./ILottery.sol";
-import "./Testable.sol";
+import "./interfaces/ILottery.sol";
+import "./lib/Testable.sol";
 // Safe math 
 import "@openzeppelin/contracts/math/SafeMath.sol";
-import "./SafeMath16.sol";
-import "./SafeMath8.sol";
+import "./lib/SafeMath16.sol";
+import "./lib/SafeMath8.sol";
 
 contract LotteryNFT is ERC1155, Ownable, Testable {
     // Libraries 

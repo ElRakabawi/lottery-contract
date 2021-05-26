@@ -2,7 +2,7 @@
 pragma solidity 0.6.12;
 
 import "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
-import "./ILottery.sol";
+import "../interfaces/ILottery.sol";
 
 contract RandomNumberGenerator is VRFConsumerBase {
     

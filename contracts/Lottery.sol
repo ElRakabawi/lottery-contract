@@ -9,15 +9,15 @@ import "@openzeppelin/contracts/proxy/Initializable.sol";
 // Inherited allowing for ownership of contract
 import "@openzeppelin/contracts/access/Ownable.sol";
 // Allows for intergration with ChainLink VRF
-import "./IRandomNumberGenerator.sol";
+import "./interfaces/IRandomNumberGenerator.sol";
 // Interface for Lottery NFT to mint tokens
-import "./ILotteryNFT.sol";
+import "./interfaces/ILotteryNFT.sol";
 // Allows for time manipulation. Set to 0x address on test/mainnet deploy
-import "./Testable.sol";
+import "./lib/Testable.sol";
 // Safe math 
 import "@openzeppelin/contracts/math/SafeMath.sol";
-import "./SafeMath16.sol";
-import "./SafeMath8.sol";
+import "./lib/SafeMath16.sol";
+import "./lib/SafeMath8.sol";
 
 // TODO rename to Lottery when done
 contract Lottery is Ownable, Initializable, Testable {
